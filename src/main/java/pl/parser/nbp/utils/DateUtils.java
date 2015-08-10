@@ -31,5 +31,14 @@ public class DateUtils {
         return DATE_TIME_SHORT_FORMATTER.parseDateTime(dateString);
     }
 
+    /**
+     * Is the same year as now
+     * @param dateTime
+     * @return
+     */
+    public static boolean isSameYearAsNow(DateTime dateTime) {
+        return dateTime.getYear() == DateTime.now().getYear();
+    }
+
 
 }

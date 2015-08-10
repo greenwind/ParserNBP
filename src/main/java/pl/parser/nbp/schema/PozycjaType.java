@@ -1,10 +1,9 @@
 
 package pl.parser.nbp.schema;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlType;
+import sun.management.snmp.jvmmib.EnumJvmMemoryGCVerboseLevel;
+
+import javax.xml.bind.annotation.*;
 
 
 /**
@@ -52,7 +51,7 @@ public class PozycjaType {
     @XmlElement(required = true)
     protected String przelicznik;
     @XmlElement(name = "kod_waluty", required = true)
-    protected String kodWaluty;
+    protected Currency kodWaluty;
     @XmlElement(name = "kurs_kupna", required = true)
     protected String kursKupna;
     @XmlElement(name = "kurs_sprzedazy", required = true)
@@ -114,7 +113,7 @@ public class PozycjaType {
      *     {@link String }
      *     
      */
-    public String getKodWaluty() {
+    public Currency getKodWaluty() {
         return kodWaluty;
     }
 
@@ -126,7 +125,7 @@ public class PozycjaType {
      *     {@link String }
      *     
      */
-    public void setKodWaluty(String value) {
+    public void setKodWaluty(Currency value) {
         this.kodWaluty = value;
     }
 
