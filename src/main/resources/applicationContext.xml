@@ -11,4 +11,5 @@
 
     <oxm:jaxb2-marshaller id="marshaller" context-path="pl.parser.nbp.schema"/>
 
+
 </beans>
